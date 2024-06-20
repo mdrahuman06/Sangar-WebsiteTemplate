@@ -14,15 +14,16 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 10px 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .logo img {
-    height: 40px;
+    width: 200px;
+    height: 60px;
 }
 
 header nav ul {
@@ -37,9 +38,23 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
+    /* font-weight: bold; */
+}
+header nav ul li a:hover {
+    background-color: #ddd; /* Hover background color */
+    color: #000; /* Hover text color */
 }
 
+header nav ul li a.active {
+    background-color: #007bff; /* Active link background color */
+    color: lightblue; /* Active link text color */
+}
+
+.container {
+    max-width: auto;
+    margin: 0 auto;
+    /* padding: 20px; */
+}
 /* main {
     padding: 20px;
 } */
@@ -183,8 +198,205 @@ header nav ul li a {
     height: 320px;
     border-radius: 6%;
 }
+/* vision */
+.vision{
+    /* margin-bottom: 40px; */
+    background-color: #fff;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.vision-text {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(181, 145, 243, 0.616);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1; /* Ensure text is above the blurred background */
+    color: #fff; /* Text color */
+}
+.vision-h2{
+    height: 50px;
+    font-size: 35px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+.vision-p{
+    font-size: 20px;
+}
 
+/* features */
 
+.feature {
+    margin-bottom: 40px;
+    height: 600px; /* Your desired height */
+    /* position: relative; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /* width: 100vw; Full screen width */
+}
+
+.feature-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-image: url('Image/960x0.webp');
+    background-size: contain; /* Ensure the image fits within the container without cropping */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image within the container */
+    z-index: -1;
+}
+
+.feature-h1 {
+    position: absolute;
+    top: 80%;
+    /* left: 50%; */
+    z-index: 1; /* Ensure the h1 is above the background */
+    color: #fff; /* Base text color */
+    font-size: 3em; /* Adjust font size as needed */
+    text-align: center; /* Center text alignment */
+    text-shadow: 
+    0 0 2px #fff, 
+    0 0 4px #fff, 
+    0 0 6px #fff, 
+    0 0 8px #fff;
+}
+
+/* features */
+
+.features {
+    /* margin-bottom: 40px; */
+    background-color: #fff;
+    width: 100%; /* Full width */
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.features-h2 {
+    height: 50px;
+    font-size: 25px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+
+.features-text {
+    height: 100%; /* Ensure .mission-text fills the height of its container */
+    width: 100%; /* Ensure .mission-text fills the width of its container */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Arrange items vertically */
+    justify-content: center;
+    gap: 30px; /* Distribute items evenly along the main axis */
+    align-items: center; /* Center items along the cross axis */
+    color: #fff; /* Text color */
+    padding: 20px; /* Add padding for spacing inside .mission-text */
+}
+
+.features-p {
+    font-size: 20px;
+}
+
+.features-img {
+    width: 570px;
+    height: 380px;
+    border-radius: 15px;
+    max-width: 100%; /* Ensure image does not overflow its container */
+}
+
+/* card */
+.header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.scholarships {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.scholarship-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.scholarship-card img {
+    max-width: 100%;
+    border-radius: 10px;
+
+}
+
+.scholarship-card h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.scholarship-card p {
+    color: #666;
+}
+
+.tracking-features {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.tracking-features img {
+    width: 50%;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.tracking-features div {
+    flex: 1;
+}
+
+.tracking-features h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.tracking-features p {
+    font-size: 1.1em;
+    color: #555;
+}
 
 
 
@@ -199,69 +411,164 @@ h1, h2 {
 
 p {
     margin-bottom: 20px;
-    color: #666;
+    color: #000;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+    /* display: block; */
+    /* margin-bottom: 20px; */
 }
+
+/* icon */
+
+.social-icons {
+    margin-top: 10px; /* Adjust spacing as needed */
+}
+
+.social-icons a {
+    font-size: 24px; /* Adjust icon size */
+    color: #333; /* Adjust icon color */
+    margin-right: 10px; /* Adjust spacing between icons */
+}
+
+/* footer */
 
 footer {
-    background-color: #f8f8f8;
-    padding: 20px;
-    text-align: center;
+    background: #f8f8f8;
+    color: #333; /* Adjusted text color for better contrast */
+    padding: 30px 20px;
+}
+.logo2 img{
+    width: 90%;
+    height: 80px;
+    /* display: block; */
+    margin-bottom: 20px;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex;
+    flex-wrap: wrap; /* Ensure content wraps to next line if necessary */
+    justify-content: space-evenly; /* Distribute items evenly across the container */
+    align-items: center; /* Align items to the top of the container */
+}
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.footer-content, .footer-links, .footer-social, .footer-contact, .footer-legal {
+.footer-content > div {
+    padding: auto;
+    width: 23%;
     margin-bottom: 20px;
 }
 
-.footer-links ul {
+.footer-content h4 {
+    color: blue;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.footer-p{
+    text-decoration: none;
+    color: #000;
+}
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content ul li {
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.footer-content ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #444;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-p{
+    width: 50%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.footer-bottom ul {
+    color: #000;
+    text-decoration: none;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 
-.footer-links ul li {
+.footer-bottom ul li {
     margin: 0 10px;
 }
 
-.footer-links ul li a, .footer-legal a, .footer-contact a {
+.footer-bottom ul li a {
+    color: #000;
     text-decoration: none;
-    color: #333;
 }
 
-.footer-social a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
+.footer-bottom ul li a:hover {
+    text-decoration: underline;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+@media (max-width: 768px) {
+    .scholarship-card {
+        width: 48%;
+    }
+
+    .tracking-features {
+        flex-direction: column;
+    }
+
+    .tracking-features img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-content > div {
+        width: 48%;
+    }
 }
 
-form label {
-    margin-bottom: 5px;
+@media (max-width: 480px) {
+    .scholarship-card {
+        width: 100%;
+    }
+
+    .footer-content > div {
+        width: 100%;
+    }
+
+    .footer-bottom ul {
+        flex-direction: column;
+    }
+
+    .footer-bottom ul li {
+        margin-bottom: 10px;
+    }
 }
 
-form input, form textarea, form button {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
 
-form button {
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
+
 
 @media (max-width: 768px) {
     header {
@@ -286,4 +593,112 @@ form button {
     form input, form textarea, form button {
         padding: 8px;
     }
+}
+
+/* contact.html */
+
+.contact-container {
+    background-image: url(Image/contact_us.jpg); /* Path to your background image */
+    background-size: cover; /* Ensures the background image covers the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white; /* Ensures text is readable over the background image */
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+    /* background: rgba(0, 0, 0, 0.6); Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-info h1 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+}
+
+.contact-form h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    /* color: #1a73e8; */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    color: #000;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #166ad9;
+}
+
+@media (min-width: 768px) {
+    .contact-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contact-info {
+        text-align: left;
+        margin-bottom: 0;
+        /* background: rgba(0, 0, 0, 0.6); Ensures the semi-transparent background remains in larger viewports */
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    /* .contact-form {
+        max-width: 500px;
+        width: 100%;
+    } */
 }

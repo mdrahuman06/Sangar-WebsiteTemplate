@@ -22,56 +22,83 @@
     </header>
 
     <main>
-        <section class="contact-us">
-            <h1>Contact Us</h1>
-            <p>Have questions or feedback? We're here to help! Contact our team for assistance with anything related to our app or services.</p>
-        </section>
-
-        <section class="contact-form">
-            <h2>Reach Out to Us</h2>
-            <form action="#" method="post">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="details">Details</label>
-                <textarea id="details" name="details" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h1>Reach Out to Us</h1>
+                <p>Have questions or feedback? We're here to help! Contact our team for assistance with anything related to our app or services.</p>
+                <p>Email: <a href="mailto:scholarshiptutor@gmail.com">scholarshiptutor@gmail.com</a></p>
+                <p>Phone: +91 7094233864</p>
+            </div>
+            <div class="contact-form">
+                <h2 class="contact-h2">Contact <span style="color:blue">Us</span></h2>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <label for="details">Details</label>
+                    <input type="text" id="details" name="details" placeholder="Enter your details">
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        
+        
     </main>
 
     <footer>
-        <div class="footer-content">
-            <p>Our platform aims to democratize access to scholarships by providing comprehensive resources, personalized guidance, and a supportive community for students worldwide.</p>
-        </div>
-        <div class="footer-links">
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="features.html">Scholarship</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="footer-social">
-            <a href="#">Whatsapp</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Instagram</a>
-        </div>
-        <div class="footer-contact">
-            <p>+91 70942 33864</p>
-            <p><a href="mailto:scholarshiputor@gmail.com">scholarshiputor@gmail.com</a></p>
-        </div>
-        <div class="footer-legal">
-            <a href="#">Terms of Use</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Cookie Policy</a>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="logo2">
+                    <img src="Image/Logo.png" alt="Scholarship Tutor">
+                    <p>Our platform aims to democratize access to scholarships by providing comprehensive resources, personalized guidance, and a supportive community for students worldwide.</p>
+                </div>
+                <div class="explore">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="features.html">Scholarship</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="follow-us">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Whatsapp</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h4>Contact</h4>
+                    <p>+91 79042 33864</p>
+                    <p><a href="https://www.scholarshiptutor.com" class="footer-p">www.scholarshiptutor.com</a></p>
+                    <p><a href="mailto:scholarshiptutor@gmail.com" class="footer-p">scholarshiptutor@gmail.com</a></p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-p">
+                    <p>&copy; 2024 All Rights Reserved</p>
+                </div>
+                <div class="footer-ul">
+                    <ul>
+                        <li><a href="#">Terms of Use</a></li><hr>
+                        <li><a href="#">Privacy Policy</a></li><hr>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script src="home.js"></script>
+
 </body>
 </html>
