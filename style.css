@@ -1,0 +1,289 @@
+/* Import the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif; /* Poppins as primary font, fallbacks */
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* main {
+    padding: 20px;
+} */
+
+/* welcome */
+.welcome {
+    margin-bottom: 40px;
+    background-image: url('Image/heroic.jpg'); /* Path to your background image */
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Image/heroic.jpg'); /* Same background image as .welcome */
+    background-size: cover;
+    /* filter: blur(5px); Adjust the blur intensity as needed */
+    z-index: -1;
+}
+
+.welcome-text {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1; /* Ensure text is above the blurred background */
+    color: #fff; /* Text color */
+}
+
+.welcome-h1,
+.welcome-p {
+    color: inherit; /* Inherit text color from .welcome-text */
+}
+
+.welcome-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; /* Adjust margin as needed */
+    border-radius: 5px;
+}
+
+.welcome-button:hover {
+    background-color: darkblue; /* Darker color on hover if desired */
+}
+
+
+/* about */
+.about-us{
+    margin-bottom: 40px;
+    background-image: url('Image/welcome.jpg'); /* Path to your background image */
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Image/welcome.jpg'); /* Same background image as .welcome */
+    background-size: cover;
+    filter: blur(5px); /* Adjust the blur intensity as needed */
+    z-index: -1;
+}
+.about-text {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1; /* Ensure text is above the blurred background */
+    color: #fff; /* Text color */
+}
+.about-h1,
+.about-p {
+    color: inherit; /* Inherit text color from .welcome-text */
+}
+.about-h1{
+    font-size: 40px;
+}
+
+/* mission */
+.mission{
+    /* margin-bottom: 40px; */
+    background-color: #fff;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.mission-h2{
+    height: 50px;
+    font-size: 25px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+.mission-text {
+    height: 100%; /* Ensure .mission-text fills the height of its container */
+    width: 100%; /* Ensure .mission-text fills the width of its container */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Arrange items vertically */
+    justify-content:center;
+    gap: 30px; /* Distribute items evenly along the main axis */
+    align-items: center; /* Center items along the cross axis */
+    color: #fff; /* Text color */
+    padding: 20px; /* Add padding for spacing inside .mission-text */
+}
+.mission-p{
+    font-size: 20px;
+}
+.mission-img{
+    width: 470px;
+    height: 320px;
+    border-radius: 6%;
+}
+
+
+
+
+
+ .vision, .team, .features-overview, .features, .contact-us, .contact-form {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content, .footer-links, .footer-social, .footer-contact, .footer-legal {
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links ul li {
+    margin: 0 10px;
+}
+
+.footer-links ul li a, .footer-legal a, .footer-contact a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    form input, form textarea, form button {
+        padding: 8px;
+    }
+}
